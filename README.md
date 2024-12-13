@@ -104,6 +104,14 @@ Run tests directly from your IDE or using Maven:
 - Add pagination for better data handling.
 - Improve UI/UX with responsive layouts and enhanced styling.
 - Implement modal dialogs for error message displays.
+- Refactor UI components into separate modules for better maintainability and reuse.
+
+### Backend
+
+- Add input validation to ensure proper data integrity:
+  - Validate the length of fields such as name and description (e.g., name should be between 3 and 50 characters).
+  - Implement a check for duplicate names when creating or updating incidents.
+- Return appropriate error messages with detailed descriptions for validation failures.
 
 ------
 
