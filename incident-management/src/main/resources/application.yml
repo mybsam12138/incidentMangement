@@ -1,0 +1,6 @@
+server:
+  port: 8080                 # 应用运行端口，默认 8080
+
+spring:
+  application:
+    name: incident-management # 应用名称，出现在日志和监控中

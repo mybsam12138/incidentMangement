@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: incident-management-deployment
+  labels:
+    app: incident-management
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: incident-management
+  template:
+    metadata:
+      labels:
+        app: incident-management
+    spec:
+      containers:
+        - name: incident-management
+          image: your-dockerhub-username/incident-management:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "default"
